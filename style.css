@@ -7,6 +7,7 @@ body {
     /*background-image: linear-gradient(to right,#262B8C,#1a1d5f); */
     background-color: #fff;
     color: rgb(0, 0, 0);
+    text-align: justify;
 }
 h1 {
     text-align: center;
@@ -23,4 +24,17 @@ main {
     margin-left: 100px;
     width: 1100px;
 
+}
+
+.identacao {
+    text-indent: 40px;
+}
+
+#lado {
+    float: left;
+}
+
+#redes {
+    margin-top: 10px;
+    margin-left: 50px;
 }
