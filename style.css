@@ -1,48 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-
-
-body {
-    font-size: 12pt;
-    font-family: Roboto,Helvetice, sans-serif;
-    /*background-image: linear-gradient(to right,#262B8C,#1a1d5f); */
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    text-align: justify;
+* {
+    margin: 0;
+    font-family: var(--fonte0);
 }
-h1 {
+
+:root {
+    --cor0:#261F33;
+    --cor1: #3A3642;
+    --cor2: #8756DB;
+    --cor3: #665D75;
+    --cor4: #fff;
+    --cor5: #cccbcb;
+    --fonte0: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right , var(--cor0),var(--cor1));
+    color: var(--cor4);
+    height: 120px;
+}
+
+header > h1 {
     text-align: center;
-    font-family: Ubuntu, sans-serif;
+    font-family: var(--fonte0);
+    padding: 20px 0px 10px 0px;
 }
+
+/* Quando for celular, vai centralizar o menu de navegação */
+@media (max-width: 500px) {
+    header > nav {
+        justify-content: center;
+    }
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+    > a {
+        color: var(--cor4);
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    a:hover {
+        color: var(--cor2);
+    }
+}
+
+
+header > p {
+    text-align: center;
+} 
+
 footer {
     text-align: center;
+    color: var(--cor4);
+    background: linear-gradient(to right , var(--cor0),var(--cor1));
+    > a {
+        color: var(--cor4);
+        text-decoration: none;
+    }
+    > a:hover {
+        color: var(--cor2);
+    }
 }
-h2 {
-    font-family: Ubuntu, sans-serif;
-    color: #ffab10;
-}
+
+
 main {
-    margin-left: 100px;
-    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: var(--cor4);
+    color: var(--cor1);
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.315);
 
-}
-
-#lado {
-    float: left;
-    margin-top: -5px;
-}
-
-#redes {
-    float: right;
-    margin-top: -10px;
+    > section {
+        margin: auto;
+        > aside {
+            font-size: 12px;
+            padding: 0px 0px 10px 20px;
+        }
+    }
 }
 
 p {
-    text-indent: 40px;
+    flex-wrap: wrap; 
+    text-align: justify;
+    padding: 10px 0px 10px 0px;
+    text-indent: 20px;
 }
 
-#especial {
-    font-style: italic; 
-    font-size: 10pt; 
-    margin-top: -15pt; 
-    text-indent: 0px;
+picture {
+    padding: 20px 0px 0px 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    > figcaption {
+        margin: 10px;
+    }
 }
+
+body {
+    background-color: var(--cor5);
+}
+
+.musicas {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+.musicas:hover {
+    color: var(--cor2);
+}
+
+ol {
+    padding: 0;
+    list-style-position: inside;
+    li {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 0px 0px 20px;
+    }
+}
+
+#meulinkinicial {
+    text-decoration: none;
+}
+
+#meulinkinicial:hover {
+    color: var(--cor3);
+}
+
+
+
+
+
+
+
