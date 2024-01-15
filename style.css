@@ -26,13 +26,6 @@ header > h1 {
     padding: 20px 0px 10px 0px;
 }
 
-/* Quando for celular, vai centralizar o menu de navegação */
-@media (max-width: 500px) {
-    header > nav {
-        justify-content: center;
-    }
-}
-
 header > nav {
     display: flex;
     flex-direction: row;
@@ -50,20 +43,25 @@ header > nav {
     }
 }
 
-
 header > p {
     text-align: center;
 } 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: var(--cor4);
     background: linear-gradient(to right , var(--cor0),var(--cor1));
-    > a {
+    padding: 10px;
+    > div > a {
         color: var(--cor4);
         text-decoration: none;
+        padding: 5px;
     }
-    > a:hover {
+    > div > a:hover {
         color: var(--cor2);
     }
 }
@@ -76,16 +74,13 @@ main {
     
     background-color: var(--cor4);
     color: var(--cor1);
-    width: 1000px;
     margin: auto;
-    padding: 20px;
-    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.315);
+    padding: 20px 40px 20px 40px;
 
     > section {
-        margin: auto;
         > aside {
             font-size: 12px;
-            padding: 0px 0px 10px 20px;
+            padding: 0px 0px 10px 0px;
         }
     }
 }
@@ -93,9 +88,10 @@ main {
 p {
     flex-wrap: wrap; 
     text-align: justify;
+    align-items: center;
     padding: 10px 0px 10px 0px;
     text-indent: 20px;
-}
+}  
 
 picture {
     padding: 20px 0px 0px 0px;
@@ -104,6 +100,7 @@ picture {
     align-items: center;
     > figcaption {
         margin: 10px;
+        font-size: 0.9em;
     }
 }
 
@@ -126,7 +123,7 @@ ol {
     li {
         font-size: 1.2em;
         font-weight: bold;
-        padding: 20px 0px 0px 20px;
+        padding: 0px 0px 0px 20px;
     }
 }
 
@@ -137,6 +134,27 @@ ol {
 #meulinkinicial:hover {
     color: var(--cor3);
 }
+
+#redes {
+    margin-top: 10px;
+}
+
+/* Quando for celular, vai centralizar o menu de navegação */
+@media screen and (max-width: 500px) {
+    header {
+        > nav {
+            justify-content: center;
+        }
+    }
+    main {
+        padding: 20px 20px;
+        picture > figcaption {
+            font-size: 0.8em;
+            text-align: center;
+        }
+    }
+}
+
 
 
 
