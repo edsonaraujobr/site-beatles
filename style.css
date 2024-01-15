@@ -127,6 +127,8 @@ ol {
         background: linear-gradient(to right, var(--cor1), var(--cor4));
         width: 400px;
         color: var(--cor4);
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -152,6 +154,11 @@ video {
     justify-content: center;
     align-items: center;
     margin: 20px 0px 20px 0px;
+}
+
+.texto {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 700px) {
