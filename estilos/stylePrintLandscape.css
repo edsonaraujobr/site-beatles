@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2em;
+    text-align: justify;
+    margin: 0px;
+}
+
+header {
+    display: none;
+}
+
+p {
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+h2 {
+    padding-bottom: 0px;
+}
+
+img {
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+audio {
+    display: none;
+}
+
+video {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+p.textofinal {
+    display: none;
+}
+
+#final::after {
+    content: 'Impressão retirada do site criado por Edson Araújo com intuito de estudos. Todos os direitos devidamente creditados.';
+}
