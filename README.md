@@ -8,7 +8,7 @@ Quem me conhece sabe como gosto das músicas da banda The Beatles, logo, pensei 
 
 # Execução 🎬
 
-![Captura de tela de 2024-02-16 15-10-37](https://github.com/edsonaraujoneto/site-beatles/assets/137104822/9ce8134f-05a6-4b90-bf69-382b28170f22)
+![Captura de tela de 2024-02-16 15-10-37](https://github.com/edsonaraujobr/site-beatles/assets/137104822/9ce8134f-05a6-4b90-bf69-382b28170f22)
 
 
 Para visualizar, [clique aqui](https://edsonaraujoneto.github.io/site-beatles/)
